@@ -1,38 +1,46 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+};
 
 img {
   max-width: 100%;
-}
+};
 
+/* UTILITIES */
+/* Typography */
 li {
   list-style-type: none;
   padding-top: 5px;
   padding-bottom: 15px;
-}
+};
 
+hr {
+  margin: 10px 0;
+};
+
+/* COMMON */
+/* Layout */
+
+/* BODY */
 .container {
   width: 90%;
   margin: 0 auto;
-}
+};
 
+/* HEADER */
 header {
   background-color: aquamarine;
   margin-bottom: 10px;
-}
+};
 
+/* MAIN */
 .status {
   background-color: orange;
   color: white;
   padding: 5px;
   font-size: 1rem;
   font-weight: 100;
-}
-
-
-hr {
-  margin: 10px 0;
-}
+};

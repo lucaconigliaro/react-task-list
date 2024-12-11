@@ -70,21 +70,21 @@ const tasks = [
     priority: 2,
     estimatedTime: 90,
     state: "in_progress",
-  },
+  }
 ];
 
 function App() {
+     // Filtro i task completati dall'array `tasks` usando il metodo `filter`.
+    // Rimangono solo i task con stato "completed".
+  const completed = tasks.filter((currElement) => currElement.state === "completed");
 
-  const completed = tasks.filter(
-    (currElement) => currElement.state === "completed"
-  );
+    // Rimangono solo i task con stato diverso da "completed".
+  const notCompleted = tasks.filter((currElement) => currElement.state != "completed");
 
-  const notCompleted = tasks.filter(
-    (currElement) => currElement.state != "completed"
-  );
-
+   // Mappo l'array `notCompleted` in un array di elementi JSX per la visualizzazione.
+  // Ogni task non completato è rappresentato da un elemento `<li>` con informazioni pertinenti.
   const completedJSX = completed.map((currElement, currIndex) => (
-    <li key={currIndex}>
+    <li key={currIndex}> 
       <h3>
         {currElement.title}{" "}
         <span className="status">{currElement.state}</span>
@@ -116,6 +116,6 @@ function App() {
       {completedJSX}
     </div>
   );
-}
+};
 
-export default App;
+export default App
