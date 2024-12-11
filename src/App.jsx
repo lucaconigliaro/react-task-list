@@ -109,10 +109,10 @@ function App() {
 
   return (
     <div className="container">
-      <h2>Current Tasks {notCompletedJSX.length}</h2>
+      <h2>Current Tasks ({notCompletedJSX.length})</h2>
       {notCompletedJSX}
-      <hr />
-      <h2>Completed Tasks {completedJSX.length}</h2>
+      <hr/>
+      <h2>Completed Tasks ({completedJSX.length})</h2>
       {completedJSX}
     </div>
   );

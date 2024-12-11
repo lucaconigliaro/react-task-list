@@ -23,3 +23,16 @@ header {
   background-color: aquamarine;
   margin-bottom: 10px;
 }
+
+.status {
+  background-color: orange;
+  color: white;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+
+hr {
+  margin: 10px 0;
+}
